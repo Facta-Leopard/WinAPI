@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ffe5d076-d3c5-4578-83ad-612f36f8fb2d}</ProjectGuid>
+    <RootNamespace>StarGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)OutputFile\bin\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>MyGame_Debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)OutputFile\bin\</OutDir>
+    <TargetName>StarGame</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PreCompile.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>PreCompile.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="MovingMenu.h" />
+    <ClInclude Include="Player2_Unit.h" />
+    <ClInclude Include="R_AnimationPlayer.h" />
+    <ClInclude Include="Asset.h" />
+    <ClInclude Include="BriefingStage.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MenuUI.h" />
+    <ClInclude Include="Player_Unit.h" />
+    <ClInclude Include="Portrait.h" />
+    <ClInclude Include="R_ButtonUI.h" />
+    <ClInclude Include="CameraMGR.h" />
+    <ClInclude Include="Class.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="ColliderMGR.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="DBGRenderMGR.h" />
+    <ClInclude Include="DefeatStage.h" />
+    <ClInclude Include="Foundation.h" />
+    <ClInclude Include="FSM.h" />
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="IdleState.h" />
+    <ClInclude Include="KeyMGR.h" />
+    <ClInclude Include="MainStage.h" />
+    <ClInclude Include="R_Map.h" />
+    <ClInclude Include="MapTile.h" />
+    <ClInclude Include="PointerFunction.h" />
+    <ClInclude Include="StarUnit.h" />
+    <ClInclude Include="MouseoverMenuUI.h" />
+    <ClInclude Include="MovingMotion.h" />
+    <ClInclude Include="PortraitMGR.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="R_Obstruction.h" />
+    <ClInclude Include="R_PanelUI.h" />
+    <ClInclude Include="PathMGR.h" />
+    <ClInclude Include="R_Player1_Unit.h" />
+    <ClInclude Include="R_Player1Building.h" />
+    <ClInclude Include="Player2.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RigidBody.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SoundMGR.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="SubMainStage.h" />
+    <ClInclude Include="TitleStage.h" />
+    <ClInclude Include="StageMGR.h" />
+    <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="Macro.h" />
+    <ClInclude Include="Enum.h" />
+    <ClInclude Include="PreCompile.h" />
+    <ClInclude Include="InGameStage.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Structure.h" />
+    <ClInclude Include="FrameWork.h" />
+    <ClInclude Include="TaskMGR.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TimeMGR.h" />
+    <ClInclude Include="AssetMGR.h" />
+    <ClInclude Include="TraceState.h" />
+    <ClInclude Include="UIMGR.h" />
+    <ClInclude Include="R_UI.h" />
+    <ClInclude Include="VictoryStage.h" />
+    <ClInclude Include="Player1_Building.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="MovingMenu.cpp" />
+    <ClCompile Include="Player2_Unit.cpp" />
+    <ClCompile Include="R_AnimationPlayer.cpp" />
+    <ClCompile Include="Asset.cpp" />
+    <ClCompile Include="AssetMGR.cpp" />
+    <ClCompile Include="BriefingStage.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MenuUI.cpp" />
+    <ClCompile Include="Player_Unit.cpp" />
+    <ClCompile Include="Portrait.cpp" />
+    <ClCompile Include="R_ButtonUI.cpp" />
+    <ClCompile Include="CameraMGR.cpp" />
+    <ClCompile Include="Class.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="ColliderMGR.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="DBGRenderMGR.cpp" />
+    <ClCompile Include="DefeatStage.cpp" />
+    <ClCompile Include="Foundation.cpp" />
+    <ClCompile Include="FSM.cpp" />
+    <ClCompile Include="Function.cpp" />
+    <ClCompile Include="IdleState.cpp" />
+    <ClCompile Include="KeyMGR.cpp" />
+    <ClCompile Include="MainStage.cpp" />
+    <ClCompile Include="R_Map.cpp" />
+    <ClCompile Include="MapTile.cpp" />
+    <ClCompile Include="Player1_Building.cpp" />
+    <ClCompile Include="PointerFunction.cpp" />
+    <ClCompile Include="StarUnit.cpp" />
+    <ClCompile Include="MouseoverMenuUI.cpp" />
+    <ClCompile Include="MovingMotion.cpp" />
+    <ClCompile Include="PortraitMGR.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="R_Obstruction.cpp" />
+    <ClCompile Include="R_PanelUI.cpp" />
+    <ClCompile Include="PathMGR.cpp" />
+    <ClCompile Include="R_Player1_Unit.cpp" />
+    <ClCompile Include="R_Player1Building.cpp" />
+    <ClCompile Include="Player2.cpp" />
+    <ClCompile Include="PreCompile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RigidBody.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SoundMGR.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="SubMainStage.cpp" />
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="TitleStage.cpp" />
+    <ClCompile Include="StageMGR.cpp" />
+    <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="InGameStage.cpp" />
+    <ClCompile Include="StarGame.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="TaskMGR.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TimeMGR.cpp" />
+    <ClCompile Include="TraceState.cpp" />
+    <ClCompile Include="R_UI.cpp" />
+    <ClCompile Include="UIMGR.cpp" />
+    <ClCompile Include="VictoryStage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="StarGame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="DoppleStarIcon.ico" />
+    <Image Include="small.ico" />
+    <Image Include="StarGame.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
